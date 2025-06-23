@@ -13,7 +13,7 @@ GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
 GOOGLE_CLOUD_PROJECT = os.environ["GOOGLE_CLOUD_PROJECT"]
 GOOGLE_CLOUD_LOCATION = os.environ["GOOGLE_CLOUD_LOCATION"]
 PROJECT_ID = GOOGLE_CLOUD_PROJECT
-CORPORA_NAME = os.environ["CORPORA_NAME"]
+CORPORA_NAME = "projects/electric-sherpa/locations/us-central1/ragCorpora/2305843009213693952"
 
 vertexai.init(project=PROJECT_ID, location=GOOGLE_CLOUD_LOCATION)
 client = genai.Client(vertexai=True, project=PROJECT_ID, location=GOOGLE_CLOUD_LOCATION)
