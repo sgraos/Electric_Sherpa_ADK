@@ -30,7 +30,7 @@ There are 3 options for using:
 1. **Using Streamlit GUI**: In terminal run
     _streamlit run agent_team_v6.py_
 2. **Using Terminal Interface**: In terminal run
-    _python agent_team_terminal_v6.py_
+    _python agent_team_terminal.py_
 3. **Live Link:**
     https://ev-driver-support-app-251571508738.us-central1.run.app
    
