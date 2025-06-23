@@ -11,6 +11,9 @@ gmaps = googlemaps.Client(key=MAPS_API)
 
 
 def nearest_charging_stations(coords: list[float]):
+    '''
+    Provides a list of nearest EV charging stations
+    '''
     searchstr = 'Nearest charging station'
     location = coords
     chargers = gmaps.places(searchstr, location=coords, radius=10000)
@@ -79,7 +82,7 @@ def get_Kia_service_stations(address: str):
     if (len(geocode_loc) > 0):
         location = [geocode_loc[0]['geometry']['location']['lat'], geocode_loc[0]['geometry']['location']['lng']]
         #location = [1.2931400376598359,103.8065707219687]
-        return nearest_charging_stations(location)
+        return nearest_Kia_service_stations(location)
     else:
         return []
 
@@ -93,7 +96,7 @@ def get_Hyundai_service_stations(address: str):
     if (len(geocode_loc) > 0):
         location = [geocode_loc[0]['geometry']['location']['lat'], geocode_loc[0]['geometry']['location']['lng']]
         #location = [1.2931400376598359,103.8065707219687]
-        return nearest_charging_stations(location)
+        return nearest_Hyundai_service_stations(location)
     else:
         return []
 
