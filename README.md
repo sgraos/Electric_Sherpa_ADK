@@ -1,7 +1,14 @@
 # Electric_Sherpa_ADK
 Electric Sherpa EV user support application built on Google ADK
 
-## How to Use
+## Introduction
+This is the Electric Sherpa EV user support application build using Google Agent Development Kit.
+It has the following features:
+1. It allows the user to ask questions of their EV manual (EV models currently supported: Hyundai Ioniq, Hyundai Ioniq5, Hyundai Ioniq6, Kia Niro, Kia EV6)
+2. It provides a list of nearest charging stations based on the user's address
+3. It provides a list of nearest Kia and Hyundai service stations
+
+## How to Install
 
 1. Create and start a virtual environment using:
 _python -m venv .venv_
@@ -16,3 +23,14 @@ _source .venv/bin/activate_
   f.  GMAPS_API_KEY=<your Google Maps API key>
 4. Install all the python libraries using the following command:
   _pip install -r requirements.txt_
+
+## How to Use
+
+There are 3 options for using:
+1. **Using Streamlit GUI**: In terminal run
+    _streamlit run agent_team_v6.py_
+2. **Using Terminal Interface**: In terminal run
+    _python agent_team_terminal_v6.py_
+3. **Live Link:**
+    https://ev-driver-support-app-251571508738.us-central1.run.app
+   
